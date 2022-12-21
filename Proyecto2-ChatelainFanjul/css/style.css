@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    width: 100%;
+}
+
+
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.imagen_principal{
+    display: flex;
+    justify-content: center;
+}
+
+.imagen_principal img{
+    width: 95%;
+    /*height: auto;*/
+}
+
+main div {
+    display:flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+main div p{
+    text-align: justify;
+    width: 95%;
+}
+
+main section{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 60px;
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+footer{
+    display: flex;
+    margin-top: 5%;
+}
+
+footer div{
+    width: 85%;
+    justify-content: end;
+}
+
+footer div p{
+    text-align: right;
+    font-size: 30px;
+}
+.redes_sociales{
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+}
+
+i{
+    font-size: 50px;
+    color:black
+}
+
+/* type_of_wines */
+.enlace_interno{
+    list-style-type: none;
+}
+
+.enlace_interno li{
+    font-style: color black;
+    float: left;
+    padding: 0 10px;
+    margin-bottom: 4%;
+    border-right: black solid;
+}
+
+.enlace_interno li:last-child{
+    border-right: none;
+}
+
+.grapes{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+h4{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.grapes div{
+    margin: 1px,;
+}
+
+.grapes div p{
+    margin-left: 2%;
+}
+
+/*famous_vineyards*/
+
+.bodegas{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.bodegas img{
+    width: 75%;
+}
+
+.bodegas h2{
+    text-align: left;
+    margin-left: 2.5%;
+}
+
+.bodegas a {
+    text-align: right;
+    width: 87.5%;
+    text-decoration: underline;
+}
+
+/*contact_us*/
+
+input[type=text], select, textarea {
+    width: 30vw; 
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    margin-left: 4%;
+    resize: vertical 
+}
+main form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin-left: 4%;
+}
+
+main form div {
+    justify-content: left;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 25%;
+    margin-top: 2%;
+}
+
+input[type=submit]:hover {
+    background-color: #45A049;
+}
+
+/* vista desktop */
+@media only screen and (min-width: 1024px){
+    .navbar-expand-lg .navbar-collapse{justify-content: flex-end;}
+    .footerFlex{display: flex;justify-content: space-around;}
+    }
+/* vista mobile */
+@media only screen and (max-width: 767px){
+    footer{
+        display: flex;
+        margin-top: 5%;
+    }
+    
+    footer div{
+        width: 85%;
+        justify-content: end;
+    }
+    
+    footer div p{
+        text-align: right;
+        font-size: 15px;
+    }
+    .redes_sociales{
+        display: flex;
+        justify-content: space-around;
+        width: 15%;
+    }
+    
+    i{
+        font-size: 25px;
+        color:black
+    }
+}
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
