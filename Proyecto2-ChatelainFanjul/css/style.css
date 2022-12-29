@@ -120,12 +120,13 @@ h4{
 }
 
 .grapes div{
-    margin: 1px,;
+    margin: 1px;
 }
 
 .grapes div p{
     margin-left: 2%;
 }
+
 
 /*famous_vineyards*/
 
@@ -221,6 +222,34 @@ input[type=submit]:hover {
     i{
         font-size: 25px;
         color:black
+    }
+    /* Type of wines */
+    .enlace_interno li{
+        font-style: color black;
+        font-size: 12px;
+        float: left;
+        padding: 0 10px;
+        margin-bottom: 4%;
+        border-right: black solid;
+    }
+    .enlace_interno ul{
+        display: flex;
+        
+    }
+    section img{
+        width:95%;
+    }
+    .grapes div img{
+        width: 95%;
+        height: 45%;
+    }
+    .grapes div {
+        display: flex;
+        flex-direction: column;
+        margin: 1px;
+    }
+    .grapes div p{
+        margin-left: 0%;
     }
 }
     
