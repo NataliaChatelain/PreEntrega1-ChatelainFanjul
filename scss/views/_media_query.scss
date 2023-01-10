@@ -1,0 +1,52 @@
+/* vista desktop */
+@media only screen and (min-width: 1024px) {
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    .footerFlex {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* vista mobile */
+@media only screen and (max-width: 767px) {
+
+    /* Type of wines */
+    .enlace_interno {
+        ul {
+            display: flex;
+
+            li {
+                font-style: color $colorFuentes;
+                font-size: 12px;
+                float: left;
+                padding: 0 10px;
+                margin-bottom: 4%;
+                border-right: black solid;
+            }
+        }
+    }
+
+    section img {
+        width: 95%;
+    }
+
+    .grapes {
+        div {
+            display: flex;
+            flex-direction: column;
+            margin: 1px;
+
+            img {
+                width: 95%;
+                height: 45%;
+            }
+
+            p {
+                margin-left: 0%;
+            }
+        }
+    }
+}

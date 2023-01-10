@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+header {
+  display: flex;
+  width: 100%; }
+
+footer {
+  display: flex;
+  margin-top: 5%;
+  /* vista mobile */ }
+  footer div {
+    width: 85%;
+    justify-content: end; }
+    footer div p {
+      text-align: right;
+      font-size: 30px; }
+  footer .redes_sociales {
+    display: flex;
+    justify-content: space-around;
+    width: 15%; }
+    footer .redes_sociales i {
+      font-size: 50px;
+      color: black; }
+  @media only screen and (max-width: 767px) {
+    footer {
+      display: flex;
+      margin-top: 5%; }
+      footer div {
+        width: 85%;
+        justify-content: end; }
+        footer div p {
+          text-align: right;
+          font-size: 15px; }
+      footer .redes_sociales {
+        display: flex;
+        justify-content: space-around;
+        width: 15%; }
+        footer .redes_sociales i {
+          font-size: 25px;
+          color: black; } }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+h1,
+h2,
+h3 {
+  text-align: center; }
+
+h1 {
+  font-size: 80px;
+  margin-top: 5%;
+  margin-bottom: 1%; }
+
+h2 {
+  margin-top: 5%;
+  font-size: 60px; }
+
+h3 {
+  font-size: 30px; }
+
+.imagen_principal {
+  display: flex;
+  justify-content: center; }
+  .imagen_principal img {
+    height: auto;
+    width: 95%; }
+
+main div {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%; }
+  main div p {
+    text-align: justify;
+    width: 95%; }
+
+main section {
+  display: flex;
+  justify-content: center; }
+
+/* type_of_wines */
+.enlace_interno {
+  list-style-type: none; }
+
+.enlace_interno li {
+  font-style: color black;
+  float: left;
+  padding: 0 10px;
+  margin-bottom: 4%;
+  border-right: black solid; }
+  .enlace_interno li li:last-child {
+    border-right: none; }
+
+.grapes {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2.5%;
+  padding-right: 2.5%; }
+  .grapes div {
+    margin: 1px; }
+    .grapes div p {
+      margin-left: 2%; }
+
+h4 {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px; }
+
+/*famous_vineyards*/
+.bodegas {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2.5%;
+  padding-right: 2.5%; }
+  .bodegas img {
+    height: auto;
+    width: 75%; }
+  .bodegas h2 {
+    text-align: left;
+    margin-left: 2.5%; }
+  .bodegas a {
+    text-align: right;
+    width: 87.5%;
+    text-decoration: underline; }
+
+/*contact_us*/
+input[type=text],
+select,
+textarea {
+  width: 30vw;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-left: 4%;
+  resize: vertical; }
+
+main form {
+  display: flex;
+  flex-direction: column; }
+  main form div {
+    justify-content: left; }
+
+input {
+  margin-left: 4%; }
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: rgba(255, 255, 255, 0.992); }
+  input[type=submit]:hover {
+    background-color: #45A049; }
+
+/* vista desktop */
+@media only screen and (min-width: 1024px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end; }
+  .footerFlex {
+    display: flex;
+    justify-content: space-around; } }
+
+/* vista mobile */
+@media only screen and (max-width: 767px) {
+  /* Type of wines */
+  .enlace_interno ul {
+    display: flex; }
+    .enlace_interno ul li {
+      font-style: color black;
+      font-size: 12px;
+      float: left;
+      padding: 0 10px;
+      margin-bottom: 4%;
+      border-right: black solid; }
+  section img {
+    width: 95%; }
+  .grapes div {
+    display: flex;
+    flex-direction: column;
+    margin: 1px; }
+    .grapes div img {
+      width: 95%;
+      height: 45%; }
+    .grapes div p {
+      margin-left: 0%; } }
+
+input[type=submit] {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 25%;
+  margin-top: 2%; }
