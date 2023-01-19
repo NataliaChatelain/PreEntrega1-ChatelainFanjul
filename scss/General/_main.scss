@@ -1,0 +1,252 @@
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+h2 {
+    margin-top: 5%;
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.imagen_principal {
+    display: flex;
+    justify-content: center;
+
+    img {
+        @include ancho (95%)
+    }
+}
+
+main {
+    div {
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+
+        p {
+            text-align: justify;
+            width: 95%;
+        }
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* type_of_wines */
+.enlace_interno {
+    list-style-type: none;
+}
+
+.enlace_interno li {
+    font-style: color $colorFuentes;
+    float: left;
+    padding: 0 10px;
+    margin-bottom: 4%;
+    border-right: black solid;
+
+    li:last-child {
+        border-right: none;
+    }
+
+    a {
+        font-style: color $colorFuentes;
+    }
+}
+
+.grapes {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+
+    div {
+        margin: 1px;
+
+        p {
+            margin-left: 2%;
+        }
+    }
+}
+
+h4 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+/*famous_vineyards*/
+
+.Catena {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-right: solid;
+
+    img {
+        width: 100%;}
+
+    &:hover{
+            background-color: rgb(252, 245, 236);
+        }
+
+    a {
+            color: black;
+            text-align: right;
+            width: 87.5%;
+            text-decoration: underline black;
+        }
+    
+}
+
+
+.Rutini {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-right: solid;
+
+    &:hover{
+        background-color: rgb(252, 245, 236);
+    }
+
+    img {
+        width: 100%;
+    }
+    
+    a {
+        color: black;
+        text-align: right;
+        width: 87.5%;
+        text-decoration: underline black;
+    }
+}
+ 
+.Luigi {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+
+    &:hover{
+        background-color: rgb(252, 245, 236);
+    }
+
+    img {
+        width: 100%;
+    }
+
+    a {
+        color: black;
+        text-align: right;
+        width: 87.5%;
+        text-decoration: underline black;
+    }
+}
+
+
+
+// .bodegas {
+//     display: flex;
+//     flex-direction: column;
+//     padding-left: 2.5%;
+//     padding-right: 2.5%;
+
+//     img {
+//         @include ancho(75%);
+//     }
+
+//     h2 {
+//         text-align: left;
+//         margin-left: 2.5%;
+//     }
+
+//     a {
+//         text-align: right;
+//         width: 87.5%;
+//         text-decoration: underline;
+//     }
+// }
+
+/*contact_us*/
+.textContact{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+    p {
+        width: 50vw;
+        text-align: justify;
+        padding: 2rem;
+    }
+
+}
+
+.contactForm{
+    border: solid 1px;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+input[type=text],
+select,
+textarea {
+    width: 30vw;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-left: 4%;
+    resize: vertical
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+
+    div {
+        justify-content: left;
+    }
+}
+
+input {
+    margin-left: 4%;
+}
+
+input[type=submit] {
+    @extend %btn;
+    background-color: map-get($colors_btn, colorBgd);
+    color: map-get($colors_btn, colorFont);
+    min-width: 100px;
+
+    &:hover {
+        background-color: #45A049;
+    }
+}
+
