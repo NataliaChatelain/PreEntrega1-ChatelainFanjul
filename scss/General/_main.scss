@@ -54,15 +54,13 @@ main {
     }
 }
 
-// Galerie
+// Gallery
 .gallery {
     --s: 150px; /* control the size */
     --g: 30px;  /* control the gap */
     --f: 1.5;   /* control the scale factor */
     display: grid;
     gap: var(--g);
-    // width: calc(3*var(--s) + 2*var(--g));
-    // aspect-ratio: 1;
     grid-template-columns: repeat(2,auto);
     grid-auto-rows: 150px;
     padding: 20px;
@@ -202,29 +200,6 @@ h4 {
     }
 }
 
-
-
-// .bodegas {
-//     display: flex;
-//     flex-direction: column;
-//     padding-left: 2.5%;
-//     padding-right: 2.5%;
-
-//     img {
-//         @include ancho(75%);
-//     }
-
-//     h2 {
-//         text-align: left;
-//         margin-left: 2.5%;
-//     }
-
-//     a {
-//         text-align: right;
-//         width: 87.5%;
-//         text-decoration: underline;
-//     }
-// }
 
 /*contact_us*/
 .textContact{
