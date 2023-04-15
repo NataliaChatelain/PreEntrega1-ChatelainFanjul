@@ -66,36 +66,13 @@ const showSales = () => {
     let option = Number(prompt("Si desea ver nuestras ofertas, ingrese 1, si desea seguir navegando 2"))
     if (option === 1) {
         for (let index = 0; index < wineSales.length; index++) {
-            const showWine = alert(`El vino ${wineSales[index].name}, cepa ${wineSales[index].grape}, cuesta $ ${wineSales[index].price}`);
+            if (wineSales[index].sale === true) {
+
+                const showWine = alert(`El vino ${wineSales[index].name}, cepa ${wineSales[index].grape}, cuesta $ ${wineSales[index].price}`);
+            }
         }
     }
 }
-
-// const showSales = () => {
-//     let option = Number(prompt("Si desea ver nuestras ofertas, ingrese 1, si desea seguir navegando 2"))
-//     if (option === 1) {
-//         for (let index = 0; index < wineSales.length; index++) {
-//             if (wineSales[index].sale === true){
-//                 let showWine = showWine.push(wineSales[index].name)
-//                 console.log(showWine);
-//                 alert(showWine);
-//             }
-//         }
-//     }
-// }
-
-// const showSales = () => {
-//     let option = Number(prompt("Si desea ver nuestras ofertas, ingrese 1, si desea seguir navegando 2"))
-//     if (option === 1) {
-//         const showWine = wineSales.map((wine) => {
-//             if (wine.sale === true) {
-//                 return ("El vino " + wine.name + " " + "cepa " + wine.grape + ", cuesta" + (wine.price - 300))
-//             }
-//         })
-//         alert(showWine);
-//     }
-// }
-
 
 
 const wineLower1600 = () => {
@@ -108,14 +85,28 @@ const wineLower1600 = () => {
 }
 
 const findGrape = () => {
-        let option = (prompt("Desea buscar un vino por cepa? Elija entre: Syrah, Merlot, Cabernet Sauvignon, Cabernet Franc "))
-        if (option === "Syrah") {
+    let option = (prompt("Desea buscar un vino por cepa? Elija entre: Syrah, Merlot, Cabernet Sauvignon, Cabernet Franc, Malbec ")).toLowerCase()
+    if (option === "syrah") {
         let foundedGrape = wineSales.find(wine => wine.grape === "Syrah")
-        alert (foundedGrape)
-        }
+        alert(`Resultado de la búsqueda ${foundedGrape.grape} : ${foundedGrape.name} tiene un valor de $ ${foundedGrape.price}`)
+    } else if (option === "merlot") {
+        let foundedGrape = wineSales.find(wine => wine.grape === "Merlot")
+        alert(`Resultado de la búsqueda ${foundedGrape.grape} : ${foundedGrape.name} tiene un valor de $ ${foundedGrape.price}`)
+    } else if (option === "cabernet sauvignon") {
+        let foundedGrape = wineSales.find(wine => wine.grape === "Cabernet Sauvignon")
+        alert(`Resultado de la búsqueda ${foundedGrape.grape} : ${foundedGrape.name} tiene un valor de $ ${foundedGrape.price}`)
+    } else if (option === "cabernet franc") {
+        let foundedGrape = wineSales.find(wine => wine.grape === "Cabernet Franc")
+        alert(`Resultado de la búsqueda ${foundedGrape.grape} : ${foundedGrape.name} tiene un valor de $ ${foundedGrape.price}`)
+    } else if (option === "malbec") {
+        let foundedGrape = wineSales.find(wine => wine.grape === "Malbec")
+        alert(`Resultado de la búsqueda ${foundedGrape.grape} : ${foundedGrape.name} tiene un valor de $ ${foundedGrape.price}`)
+    } else {
+        alert("No existe el vino buscado")
+    }
 }
 
-console.log(wineSales)
+
 
 verifyAge()
 
