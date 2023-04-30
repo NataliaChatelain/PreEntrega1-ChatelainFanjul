@@ -73,6 +73,14 @@
   </header>
 
   <main>
+    <div id="verifyAge" class="verifyAge">
+      <p>Are you over 18 years old?</p>
+      <span>Some content is age restricted</span>
+      <div>
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+      </div>
+    </div>
     <h1>Wines of Argentina</h1>
     <section class="imagen_principal">
       <img src="./assets/img/mendoza_principal.jpeg" alt="Viñedo Mendoza">
@@ -124,6 +132,24 @@
     <div class="gallery_item"> <img src="./assets/img/galeria6.jpeg" alt="image6"> </div>
   </div>
 
+  <div id="subscriptionForm" style="display:none" class="subscriptionForm">
+    <h2>Subscribe and receive a 15% discount!</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div id="subscriptionOk" style="display:none" class="subscriptionOk">
+  </div>
+  
+  <div id="wineSaleGallery" style="display:none" class="wineSaleGallery">
+    <h2>Our Wine Sale!</h2>
+    <h4>Store will be available soon</h4>
+    <div id="wineItems" class="wineItems"></div>
+  </div>
   <footer>
     <div>
       <p>Follow us</p>

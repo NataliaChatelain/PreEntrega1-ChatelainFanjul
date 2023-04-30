@@ -35,8 +35,39 @@ h3 {
         @include ancho (95%)
     }
 }
+.verifyAge {
+    position: fixed;
+    top: 35vh;
+    left: 33.33vw;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(242, 242, 230);
+    width: 30vw;
+    border: solid 2px black;
+    border-radius: 10px;
+
+    
+
+    p {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+
+    button {
+        margin: 5px;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: white;
+    }
+}
 
 main {
+
     div {
         display: flex;
         justify-content: center;
@@ -83,6 +114,48 @@ main {
         height: calc(var(--s)*var(--f));
         // transform:scale(1.5);
         opacity: 5;
+    }
+}
+.subscriptionForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 2rem;
+    margin: 5%;
+    padding: 1rem;
+}
+
+.subscriptionOk {
+    margin: 5%;
+    font-size: 30px;
+    border: solid 1px black;
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
+.wineSaleGallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .wineItems{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    p {
+        text-align: center;
     }
 }
 
