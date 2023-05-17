@@ -159,6 +159,7 @@ main {
     }
 }
 
+
 /* type_of_wines */
 .enlace_interno {
     list-style-type: none;
@@ -331,3 +332,26 @@ input[type=submit] {
     }
 }
 
+/*profile*/ 
+.registerOk {
+    flex-direction: column;
+    margin: 15% auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    
+    th,
+    td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+      font-size: 23px;
+    }
+    
+    th {
+      background-color: #dddddd;
+    }
+  }
+  
+  

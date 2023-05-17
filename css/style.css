@@ -10,6 +10,7 @@ header {
 footer {
   display: flex;
   margin-top: 5%;
+  margin-left: 5%;
   /* vista mobile */ }
   footer div {
     width: 85%;
@@ -291,6 +292,23 @@ input[type=submit] {
   min-width: 100px; }
   input[type=submit]:hover {
     background-color: #45A049; }
+
+/*profile*/
+.registerOk {
+  flex-direction: column;
+  margin: 15% auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px; }
+  .registerOk th,
+  .registerOk td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    font-size: 23px; }
+  .registerOk th {
+    background-color: #dddddd; }
 
 /* vista desktop */
 @media only screen and (min-width: 1024px) {

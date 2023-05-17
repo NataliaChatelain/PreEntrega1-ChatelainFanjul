@@ -4,13 +4,36 @@ const verifyAge = document.getElementById("verifyAge");
 const subscriptionForm = document.getElementById("subscriptionForm");
 const wineSaleGallery = document.getElementById("wineSaleGallery");
 const wineItems = document.getElementById("wineItems");
+const profile = document.getElementById("profile");
 
-yesBtn.addEventListener("click", function () {
-    verifyAge.style.display = "none";
-    subscriptionForm.style.display = "flex";
-    wineSaleGallery.style.display = "flex";
+const ageRestrictedContent = localStorage.getItem("ageRestrictedContent");
 
-    // Render wine items
+if (ageRestrictedContent === "true") {
+  profile.style.display = "flex";
+  subscriptionForm.style.display = "flex";
+  wineSaleGallery.style.display = "flex";
+  renderWineItems();
+} else {
+  swal({
+    title: "Are you over 18 years old?",
+    text: "Some content is age restricted",
+    icon: "warning",
+    buttons: true,
+    dangerMode: true,
+  }).then((above18) => {
+    if (above18) {
+      localStorage.setItem("ageRestrictedContent", "true");
+      subscriptionForm.style.display = "flex";
+      wineSaleGallery.style.display = "flex";
+      renderWineItems();
+    } else {
+      localStorage.setItem("ageRestrictedContent", "false");
+      swal("You'll not be able to see some sections");
+    }
+  });
+}
+
+function renderWineItems() {
     const wineSales = [
         {
             name: "Catena Zapata",
@@ -86,15 +109,7 @@ yesBtn.addEventListener("click", function () {
         subscriptionOk.style.display = "block";
     });
 
-
-
-});
-
-
-noBtn.addEventListener("click", function () {
-    verifyAge.style.display = "none";
-});
-
+}
 
 
 // const wineLower1600 = () => {
